@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {AppComponent} from "./app.component";
 import {HighlightDirective} from "./highlight.directive";
 import {TitleComponent} from "./title.component";
+import {UserService} from "./user.service";
 
 @NgModule({
     imports: [ BrowserModule ],
@@ -11,6 +12,7 @@ import {TitleComponent} from "./title.component";
         TitleComponent,
         HighlightDirective
     ],
+    providers: [ UserService ],
     bootstrap: [ AppComponent ]
 })
 export class AppModule {}
