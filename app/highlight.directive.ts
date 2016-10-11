@@ -1,6 +1,6 @@
 import {Directive, Renderer, ElementRef} from "@angular/core";
 @Directive({
-    selector: '[myHighlight]' // The CSS selector for an **attribute** is the attribute name in square brackets.
+    selector: '[highlight]' // The CSS selector for an **attribute** is the attribute name in square brackets.
 })
 export class HighlightDirective {
 

@@ -3,7 +3,7 @@ import {UserService} from "./user.service";
 
 @Component({
     selector: 'app-title',
-    template: `<h1 myHighlight>{{title}} {{subtitle}}</h1>
+    template: `<h1 highlight>{{title}} {{subtitle}}</h1>
 
 <p *ngIf="user">
     <i>Welcome, {{user}}</i>
