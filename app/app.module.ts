@@ -6,6 +6,7 @@ import {UserService} from "./user.service";
 import {ContactModule} from "./contact/contact.module";
 import { AppRoutingModule } from './app-routing.module'
 import {SharedModule} from "./shared/shared.module";
+// import {APP_BASE_HREF} from "@angular/common";
 
 @NgModule({
     imports: [
@@ -18,7 +19,12 @@ import {SharedModule} from "./shared/shared.module";
         AppComponent,
         TitleComponent
     ],
-    providers: [ UserService ],
+    providers: [
+        UserService
+        // does not work for complex path, such as /crisis/list
+        // ,{ provide: APP_BASE_HREF,  useValue: '/'}
+
+    ],
     bootstrap: [ AppComponent ]
 })
 export class AppModule {}
